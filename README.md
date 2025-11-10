@@ -281,19 +281,245 @@ The dashboard includes 3 diverse candidates:
    - PhD background with strong innovation
    - Excellent publication record
 
-## 🚧 Future Enhancements
+## 🚀 Product Roadmap
 
+### ✅ Completed Features
 - [x] File upload support for resumes and data
 - [x] Resume-JD matching with AI
 - [x] Interview question suggestions based on gaps
 - [x] Download analysis reports
-- [ ] Export candidate reports as PDF
-- [ ] Connect to real API/database
-- [ ] Machine learning predictions
-- [ ] Team composition analysis
-- [ ] Historical trend tracking
-- [ ] Batch resume processing
-- [ ] Advanced analytics dashboard
+- [x] Follow-up chat for match analysis
+- [x] Multi-format support (CSV, JSON, Excel, PDF, TXT)
+
+### 📋 Phase 1: MVP Enhancements (Next 2 Weeks)
+
+**Priority Features:**
+
+1. **Batch Resume Processing**
+   - Upload multiple resumes simultaneously
+   - Compare all candidates against single job description
+   - Generate comparative ranking report
+   - **Impact**: 10x faster candidate screening
+
+2. **Enhanced PDF Parsing**
+   - Full PDF text extraction (PyPDF2/pdfplumber)
+   - Better DOCX parsing
+   - Structured data extraction (skills, experience, education)
+   - **Impact**: More accurate resume analysis
+
+3. **Advanced Export & Reporting**
+   - PDF report generation for match analysis
+   - Excel export with comparative data
+   - Shareable analysis links
+   - **Impact**: Professional deliverables for stakeholders
+
+4. **Smart Resume Parser**
+   - Auto-extract: Name, Email, Phone, Skills, Education, Experience
+   - Skills matching visualization
+   - Experience timeline generation
+   - **Impact**: Eliminate manual data entry
+
+### 🎯 Phase 2: Production Ready (Weeks 3-8)
+
+5. **Database Integration**
+   - PostgreSQL/MongoDB for candidate storage
+   - Search and filter functionality
+   - Historical candidate tracking
+   - **Impact**: Real production-grade system
+
+6. **User Authentication & Multi-tenancy**
+   - Login system (Email/Password, Google OAuth)
+   - Multi-company/team support
+   - Role-based access control (Recruiter, Hiring Manager, Admin)
+   - **Impact**: Enterprise-ready SaaS product
+
+7. **Candidate Management Dashboard**
+   - Centralized candidate database
+   - Status tracking (Applied, Screening, Interview, Offer, Rejected)
+   - Notes and collaboration
+   - **Impact**: End-to-end hiring workflow
+
+8. **Skills Gap Analysis**
+   - Compare required vs. candidate skills
+   - Training recommendations
+   - Development roadmap generator
+   - **Impact**: Onboarding & development planning
+
+9. **Email Integration**
+   - Import resumes from email attachments
+   - Auto-respond to candidates
+   - Interview scheduling automation
+   - **Impact**: Workflow automation
+
+### 💎 Phase 3: Scale & Differentiation (Months 3-6)
+
+10. **n8n Workflow Automation Integration** 🔥
+    - **750+ pre-built integrations** (Slack, Gmail, LinkedIn, GitHub, etc.)
+    - **Visual workflow builder** for no-code automation
+    - **Automated workflows**:
+      - High-scoring candidate → Auto-notify hiring manager on Slack
+      - Resume uploaded → Parse → Score → Email report
+      - Interview scheduled → Add to Google Calendar → Send prep notes
+      - Candidate rejected → Auto-send personalized email
+      - New JD posted → Auto-source from LinkedIn → Score → Shortlist
+    - **Custom triggers and actions**:
+      - Trigger: New candidate scored above 80
+      - Action: Create Notion doc, post to Slack, add to ATS
+    - **Integration examples**:
+      - Slack: Real-time notifications for top candidates
+      - Gmail: Auto-respond, schedule interviews
+      - Google Sheets: Sync candidate data
+      - Notion/Airtable: CRM integration
+      - Calendar apps: Interview scheduling
+      - CRMs (Salesforce, HubSpot): Lead management
+      - ATSs (Greenhouse, Lever): Seamless sync
+    - **Self-hosted option**: Privacy-focused companies can run their own n8n instance
+    - **Impact**: 750+ apps connected, infinite automation possibilities, zero-code workflows
+
+11. **Direct ATS Integration**
+    - Native Greenhouse, Lever, Workday connectors
+    - Automatic candidate sync
+    - Push/pull candidate data
+    - **Impact**: Deep enterprise integration
+
+12. **Chrome Extension**
+    - Parse LinkedIn profiles directly
+    - Analyze from browser
+    - One-click candidate import
+    - **Impact**: Massive recruiter productivity boost
+
+13. **Team Collaboration**
+    - Multi-reviewer scoring
+    - Comment threads and discussions
+    - Consensus-based decisions
+    - Meeting scheduler integration
+    - **Impact**: Collaborative hiring
+
+14. **Analytics Dashboard**
+    - Time-to-hire metrics
+    - Source effectiveness tracking
+    - Diversity analytics
+    - Funnel conversion rates
+    - **Impact**: Data-driven hiring decisions
+
+15. **API Access**
+    - RESTful API for developers
+    - Webhooks for integrations
+    - SDK libraries (Python, JavaScript)
+    - **Impact**: Platform ecosystem
+
+### 🌟 Phase 4: Market Leadership (6+ Months)
+
+16. **AI-Powered Sourcing**
+    - Auto-find candidates matching job description
+    - GitHub/LinkedIn profile recommendations
+    - Passive candidate identification
+    - Diversity recommendations
+    - **Impact**: Proactive recruiting
+
+17. **Video Interview Analysis**
+    - Upload/record interview videos
+    - Communication skills analysis
+    - Sentiment analysis
+    - Automated feedback generation
+    - **Impact**: Complete interview solution
+
+18. **Predictive Analytics**
+    - Success prediction based on historical hires
+    - Turnover risk scoring
+    - Cultural fit prediction
+    - Performance forecasting
+    - **Impact**: ML-powered hiring
+
+19. **Team Composition Optimizer**
+    - Analyze current team skills/gaps
+    - Recommend ideal next hire
+    - Diversity balancing
+    - Skill complementarity analysis
+    - **Impact**: Strategic workforce planning
+
+20. **Mobile Applications**
+    - iOS and Android apps
+    - Review candidates on-the-go
+    - Push notifications
+    - Quick decision-making
+    - **Impact**: Recruiter mobility
+
+21. **Custom Scoring Models**
+    - User-defined factors and weights
+    - Industry-specific templates (SWE, Sales, Marketing, etc.)
+    - Role-based customization
+    - **Impact**: Maximum flexibility
+
+### 🔐 Compliance & Enterprise Features
+
+22. **Advanced Security**
+    - SOC 2 compliance
+    - GDPR compliance
+    - Data encryption at rest/transit
+    - Audit logs
+    - **Impact**: Enterprise trust
+
+23. **EEOC Compliance Tools**
+    - Anonymized resume review
+    - Bias detection alerts
+    - Diversity tracking reports
+    - Compliance documentation
+    - **Impact**: Legal compliance
+
+24. **Background Verification**
+    - Credential verification
+    - Reference check automation
+    - Social media screening
+    - **Impact**: Due diligence automation
+
+### 💰 Monetization Strategy
+
+**Freemium Model:**
+- **Free**: 10 analyses/month, basic features
+- **Pro**: $49/month - 100 analyses, advanced features
+- **Team**: $199/month - 500 analyses, collaboration tools
+- **Enterprise**: Custom pricing - unlimited, full integration
+
+**Alternative Pricing:**
+- Per-hire model: $99 per successful placement
+- API access: Usage-based pricing
+
+### 📊 Success Metrics
+
+**Key Metrics to Track:**
+- **User Engagement**: DAU, WAU, MAU
+- **Product Usage**: Analyses per user, time in app
+- **Conversion**: Free → Paid conversion rate
+- **Retention**: Weekly/monthly cohort retention
+- **Revenue**: MRR, ARR growth
+- **Customer Impact**: Time saved, quality of hire improvement
+
+### 🎖️ Competitive Advantages
+
+1. **AI-First Approach**: Powered by state-of-the-art LLMs (Llama 3.3 70B)
+2. **Explainability**: Transparent scoring with detailed breakdowns
+3. **Interactive**: What-if scenarios and real-time feedback
+4. **750+ Integrations**: n8n workflow automation connects to virtually any tool
+5. **No-Code Automation**: Visual workflow builder for custom recruiting workflows
+6. **Complete Solution**: End-to-end from sourcing to offer
+7. **Developer-Friendly**: API-first architecture with webhooks
+8. **Open-Source Option**: Self-hosted n8n for maximum privacy
+
+---
+
+## 🎯 Immediate Next Steps
+
+**Recommended Focus (This Week):**
+1. Batch Resume Processing - Highest ROI feature
+2. PDF Text Extraction - Most requested
+3. Skills Extraction & Matching - AI differentiator
+
+These features will:
+- Solve critical recruiter pain points
+- Showcase AI capabilities
+- Create viral demo opportunities
+- Perfect for investor/YC presentations
 
 ## 👥 Team
 
